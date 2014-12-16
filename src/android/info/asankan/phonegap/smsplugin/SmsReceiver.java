@@ -17,7 +17,7 @@ public class SmsReceiver extends BroadcastReceiver {
     private CallbackContext callback_receive;
     private boolean isReceiving=true;
 
-    private boolean broadcast=false;//continue or not the message broadcast to the other broadcast receivers waiting for an incoming SMS
+    private boolean broadcast=true;//continue or not the message broadcast to the other broadcast receivers waiting for an incoming SMS
 
     @Override
     public void onReceive(Context context, Intent intent) {
